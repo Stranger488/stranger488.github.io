@@ -1,10 +1,5 @@
-// = app/libs/jquery/dist/jquery.min.js
-// = app/libs/bootstrap/js/bootstrap.bundle.min.js
-// = app/libs/bootstrap/js/modal.js
-
 $(function() {
     // Custom JS
-
     // overlay
     $('#dismiss, .overlay').on('click', function () {
             // hide sidebar
@@ -35,4 +30,3 @@ $(function() {
     });
 
 });
-
