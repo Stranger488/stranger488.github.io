@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+
+    <title>litcom</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <!-- Template Basic Images End -->
+    
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+    <!-- Custom Browsers Color End -->
+  
+    <link rel="stylesheet" href="libs/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+    <!-- Custom HTML -->
+  <header class="sticky-top custom-shadow">
+      <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header text-center">
+                <a href="#" class="sidebar-header-link text-link"><h3 class="mb-0">litcom</h3></a>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#"><i class="fa fa-home mr-2"></i>Главная</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-bell mr-2"></i>Уведомления</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-envelope mr-2"></i>Сообщения</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-search mr-2"></i>Поиск</a>
+                </li>
+            </ul>
+
+            <footer class="my-footer" id="sidebar-footer">
+            <div class="my-block">
+              <div class="my-footer-info text-center">&copy; litcom, 2019</div>
+              <ul class="my-footer-menu">
+                <li class="my-footer-item"><a href="#">О нас</a></li>
+                <li class="my-footer-item"><a href="#">Правила</a></li>
+                <li class="my-footer-item"><a href="#">Условия</a></li>
+                <li class="my-footer-item"><a href="#">Политика конфеденциальности</a></li>
+              </ul>
+            </div>
+          </footer>
+        </nav>
+
+        <!-- Page Content -->
+        <div id="content">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="my-transition my-brand navbar-brand order-1 order-lg-0" href="#">
+                      <img src="img/favicon/favicon.ico" width="30" height="30" alt="litcom">
+                    </a>
+
+                    <button type="button" id="sidebarCollapse" class="d-lg-none btn my-btn order-0">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="pullUp navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link my-transition" href="#"><i class="fa fa-home mr-1"></i>Главная</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link my-transition" href="#"><i class="fa fa-bell mr-1"></i>Уведомления</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link my-transition" href="#"><i class="fa fa-envelope mr-1"></i>Сообщения</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <form class="form-inline d-none d-lg-block mr-3">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+                      <button class="btn my-btn my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+
+                    <a class="my-user-name text-link my-transition" id="user-profile" href="#">
+                      <img src="img/profile.jpg" width="30" height="30" alt="Имя пользователя" class="rounded-circle">
+                      <span class="ml-1">Имя пользователя</span>
+                    </a>
+                  </nav>
+                  
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+          <!-- Dark Overlay element -->
+          <div class="overlay"></div>
+      </div>
+  </header>
+
+  <div class="my-profile-bg-wrap">
+    <div class="container-fluid">
+      <div class="my-profile-bg" style="background-image: url(img/img.jpg);">
+      </div>
+    </div>
+  </div>
+
+<div class="my-profile-wrap my-profile">
+  <div class="container">
+    <div class="row">
+        <div class="col-4">
+          <div class="my-profile-head">
+            <a class="text-link my-transition my-profile-text" id="user-profile" href="#">
+              <img src="img/profile.jpg" width="60" height="60" alt="Имя пользователя" class="rounded-circle">
+              <span class="ml-1">Имя пользователя</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-8">
+            <div class="my-profile-body d-flex justify-content-between flex-column flex-sm-row">
+              <div class="my-profile-publ p-1">
+                <a href="#" class="text-link my-profile-publ-link d-flex flex-column">
+                  <span class="flex-self-center my-profile-text">Публикации</span>
+                  <span class="my-profile-num">100</span>
+                </a>
+              </div>
+              <div class="my-profile-subs p-1">
+                <a href="#" class="text-link my-profile-subs-link d-flex flex-column">
+                  <span class="my-profile-text">Подписчики</span>
+                  <span class="my-profile-num">10</span>
+                </a>
+              </div>
+              <div class="my-profile-follow p-1">
+                <a href="#" class="text-link my-profile-sub-link d-flex flex-column">
+                  <span class="my-profile-text">Подписки</span>
+                  <span class="my-profile-num">50</span>
+                </a>
+              </div>
+              <div class="pl-1 my-profile-btn">
+                <button class="btn btn-info">
+                  Изменить профиль
+                </button>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-12 col-lg-4 d-none d-lg-block">
+
+
+          <div class="my-block my-recom">
+            <div class="my-head">
+              <h5 class="d-inline-block">Рекомендации</h5>
+              <span class="my-delim">|</span>
+              <a href="#" class="my-transition my-recom-all-wrap"><span class="my-recom-all">все<span></a>
+            </div>
+            <div class="my-body">
+              <div class="my-recom-entity">
+                <a class="text-link my-transition my-profile-text" href="#">
+                  <img src="img/profile.jpg" width="40" height="40" alt="Имя пользователя" class="rounded-circle">
+                  <span class="ml-1">Имя пользователя</span>
+                </a>
+                <button class="my-follow-btn btn btn-info">Подписаться</button>
+              </div>
+              <div class="my-recom-entity">
+                <a class="text-link my-transition my-profile-text" href="#">
+                  <img src="img/profile.jpg" width="40" height="40" alt="Имя пользователя" class="rounded-circle">
+                  <span class="ml-1">Имя пользователя</span>
+                </a>
+                <button class="my-follow-btn btn btn-info">Подписаться</button>
+              </div>
+              <div class="my-recom-entity">
+                <a class="text-link my-transition my-profile-text" href="#">
+                  <img src="img/profile.jpg" width="40" height="40" alt="Имя пользователя" class="rounded-circle">
+                  <span class="ml-1">Имя пользователя</span>
+                </a>
+                <button class="my-follow-btn btn btn-info">Подписаться</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="my-block my-popular">
+            <div class="my-head">
+              <h5>Популярное</h5>
+            </div>
+            <div class="my-body">
+              <div class="my-pop-tags">
+                <a href="#" class="my-pop-tag text-link my-transition d-block">Классика</a>
+                <a href="#" class="my-pop-tag text-link my-transition d-block">Фэнтези</a>
+                <a href="#" class="my-pop-tag text-link my-transition d-block">Детектив</a>
+                <a href="#" class="my-pop-tag text-link my-transition d-block">Приключение</a>
+              </div>
+            </div>
+          </div>
+
+          <footer class="my-footer">
+            <div class="my-block">
+              <div class="my-footer-info text-center">&copy; litcom, 2019</div>
+              <ul class="my-footer-menu mt-1">
+                <li class="my-footer-item"><a href="#">О нас</a></li>
+                <li class="my-footer-item"><a href="#">Правила</a></li>
+                <li class="my-footer-item"><a href="#">Условия</a></li>
+                <li class="my-footer-item"><a href="#">Политика конфеденциальности</a></li>
+              </ul>
+            </div>
+          </footer>
+
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="my-block my-new">
+              <form>
+                <div class="media">
+                  <label for="exampleFormControlTextarea1"><img src="img/profile.jpg" width="30" height="30" alt="Имя пользователя" class="mr-2 media-head d-inline-block rounded-circle"></label>
+                  <textarea class="media-body d-inline-block form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Что нового?"></textarea>
+                </div>
+              </form>
+          </div>
+
+          <div class="my-block my-post">
+              <div class="my-post-head">
+                <a href="#" class="media my-transition">
+                  <span class="media-head"><img src="img/profile.jpg" width="45" height="45" alt="Имя пользователя" class="rounded-circle"></span>
+                  <span class="media-body">
+                    <span class="ml-2">Имя пользователя</span>
+                    <span class="my-delim">|</span>
+                    <span class="my-post-time ml-2">5 ч.</span>
+                  </span>
+                </a>
+              </div>
+              <div class="my-post-body d-flex align-items-center flex-column">
+                <img src="img/img.jpg" alt="post-img" class="img-responsive">
+                <p class="my-post-body-text pt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quidem ipsam magnam sapiente non maiores, vel sint dicta voluptate nam voluptatem fuga consequuntur culpa temporibus distinctio cumque veritatis unde quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi odit vel reprehenderit maiores pariatur iste similique animi veritatis doloribus nostrum repellendus maxime doloremque in laudantium, sint debitis officia nesciunt incidunt.</p>
+
+                <button class="my-post-btn btn btn-info mb-3">Читать дальше</button>
+
+                <div class="my-post-foot-wrap">
+                  <a href="#" class="my-post-com"><i class="fa fa-comments"></i></a>
+                  <a href="#" class="my-post-ret"><i class="fa fa-retweet"></i></a>
+                  <a href="#" class="my-post-heart"><i class="fa fa-heart"></i></a>
+                </div>
+              </div>
+          </div>
+
+          <div class="my-block my-post">
+              <div class="my-post-head">
+                <a href="#" class="media my-transition">
+                  <span class="media-head"><img src="img/profile.jpg" width="40" height="40" alt="Имя пользователя" class="rounded-circle"></span>
+                  <span class="media-body">
+                    <span class="ml-2">Имя пользователя</span>
+                    <span class="my-delim">|</span>
+                    <span class="my-post-time ml-2">5 ч.</span>
+                  </span>
+                </a>
+              </div>
+              <div class="my-post-body d-flex align-items-center flex-column">
+                <img src="img/img.jpg" alt="post-img" class="img-responsive">
+                <p class="my-post-body-text pt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quidem ipsam magnam sapiente non maiores, vel sint dicta voluptate nam voluptatem fuga consequuntur culpa temporibus distinctio cumque veritatis unde quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi odit vel reprehenderit maiores pariatur iste similique animi veritatis doloribus nostrum repellendus maxime doloremque in laudantium, sint debitis officia nesciunt incidunt.</p>
+
+                <button class="my-post-btn btn btn-info mb-3">Читать дальше</button>
+
+                <div class="my-post-foot-wrap">
+                  <a href="#" class="my-post-com"><i class="fa fa-comments"></i></a>
+                  <a href="#" class="my-post-ret"><i class="fa fa-retweet"></i></a>
+                  <a href="#" class="my-post-heart"><i class="fa fa-heart"></i></a>
+                </div>
+              </div>
+          </div>
+
+          <div class="my-block my-post">
+              <div class="my-post-head">
+                <a href="#" class="media my-transition">
+                  <span class="media-head"><img src="img/profile.jpg" width="40" height="40" alt="Имя пользователя" class="rounded-circle"></span>
+                  <span class="media-body">
+                    <span class="ml-2">Имя пользователя</span>
+                    <span class="my-delim">|</span>
+                    <span class="my-post-time ml-2">5 ч.</span>
+                  </span>
+                </a>
+              </div>
+              <div class="my-post-body d-flex align-items-center flex-column">
+                <img src="img/img.jpg" alt="post-img" class="img-responsive">
+                <p class="my-post-body-text pt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quidem ipsam magnam sapiente non maiores, vel sint dicta voluptate nam voluptatem fuga consequuntur culpa temporibus distinctio cumque veritatis unde quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi odit vel reprehenderit maiores pariatur iste similique animi veritatis doloribus nostrum repellendus maxime doloremque in laudantium, sint debitis officia nesciunt incidunt.</p>
+
+                <button class="my-post-btn btn btn-info mb-3">Читать дальше</button>
+
+                <div class="my-post-foot-wrap">
+                  <a href="#" class="my-post-com"><i class="fa fa-comments"></i></a>
+                  <a href="#" class="my-post-ret"><i class="fa fa-retweet"></i></a>
+                  <a href="#" class="my-post-heart"><i class="fa fa-heart"></i></a>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+  <div id="toTop"><i class="fa fa-angle-double-up"></i> <span class="toTop-text">Наверх</span></div>
+  <script src="js/scripts.min.js"></script>
+</body>
+</html>
