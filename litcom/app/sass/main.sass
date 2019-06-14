@@ -1,0 +1,489 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	background: darken($white, 8%)
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	letter-spacing: 0.01rem
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+a
+	text-decoration: none
+	color: $text
+	&:hover
+		text-decoration: none
+		color: $text
+
+
+/*---custom----*/
+.wrapper
+	display: block
+
+#sidebar
+	/* top layer */
+	width: 250px
+	position: fixed
+	top: 0
+	left: -250px
+	height: 100vh
+	z-index: $zindex-tooltip
+	background: $cyan
+	color: #fff
+	transition: all 0.3s
+	overflow-y: auto
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2)
+	.sidebar-header
+		padding: 20px
+		background: $cyan
+		&-link
+			transition: all 0.3s ease-in-out
+			color: $white
+			&:hover
+				color: lighten($cyan, 50%)
+	ul.components
+		border-bottom: 1px solid lighten($cyan, 50%)
+	ul p
+		color: #fff
+		padding: 10px
+	ul li a
+		padding: 10px
+		font-size: 1.1em
+		display: block
+		text-decoration: none
+		transition: all 0.3s
+		color: inherit
+	ul li a:hover
+		color: $cyan
+		background: #fff
+	ul li.active>a,
+	a[aria-expanded="true"]
+		color: #fff
+		background: darken($cyan, 3%)
+	a[data-toggle="collapse"]
+		position: relative
+
+#form-mobile
+	padding: 20px 0
+
+#sidebar.active
+	left: 0
+
+.overlay
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	/* full screen */
+	width: 100vw
+	height: 100vh
+	z-index: $zindex-popover
+	/* transparent black */
+	background: rgba(0, 0, 0, 0.7)
+	/* middle layer, i.e. appears below the sidebar */
+	opacity: 0
+	/* animate the transition */
+	transition: all 0.5s ease-in-out
+
+/* display .overlay when it has the .active class */
+.overlay.active
+	display: block
+	opacity: 1
+
+#dismiss
+	width: 35px
+	height: 35px
+	line-height: 35px
+	text-align: center
+	background: $cyan
+	position: absolute
+	top: 10px
+	right: 13px
+	cursor: pointer
+	transition: all 0.3s
+	&:hover
+		background: #fff
+		color: $cyan
+
+.text-link
+	text-decoration: none
+	&:hover
+		text-decoration: none
+
+.my-brand
+	&:hover
+		opacity: 0.8
+
+.my-transition
+	transition: all 0.2s ease-in-out
+
+.custom-shadow
+	box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.2)
+
+.my-btn
+	background-color: lighten($cyan, 7%)
+	&:hover
+		background-color: lighten($cyan, 3%)
+	.fa
+		color: $white
+
+.my-user-name
+	color: $white
+	font-size: 0.9em
+	&:hover
+		opacity: 0.8
+		color: darken($white, 2%)
+
+#content
+	background: $cyan
+
+.navbar-nav
+	font-size: 0.9em
+
+.my-profile-wrap
+	padding: 20px
+	background-color: $light
+
+.my-profile
+	.my-profile-text
+		span
+			color: $text
+			font-size: 0.9em
+		&:hover
+			opacity: 0.8
+
+.my-profile-body
+	font-size: 0.8rem
+	div
+		transition: all 0.2s ease-in-out
+		&:hover
+			opacity: 0.8
+			a
+				color: darken($cyan, 10%)
+		a
+			transition: all 0.2s ease-in-out
+			color: $text
+			text-align: center
+			.my-profile-text
+				letter-spacing: 0.06em
+			.my-profile-num
+				font-weight: bold
+				font-size: 1.2em
+				color: darken($cyan, 10%)
+
+.my-block
+	margin-top: $spacer
+	padding: 15px
+	background: darken($white, 1%)
+	box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.2)
+	min-width: 250px
+	.my-head
+		text-align: center
+
+.my-popular
+	.my-pop-tags
+		font-size: 0.9em
+		letter-spacing: 0.1em
+		.my-pop-tag
+			color: darken($cyan, 10%)
+			&:hover
+				text-decoration: underline
+
+.my-recom
+	min-width: 250px
+	.my-recom-all-wrap
+		font-size: 0.8rem
+		&:hover
+			color: $cyan
+	&-entity
+		color: $text
+		padding: $spacer*0.5
+		border-bottom: 1px solid darken($light, 10%)
+		.my-profile-text
+			font-size: 0.85em
+			&:hover
+				color: $cyan
+				opacity: 0.9
+	.my-follow-btn
+		// font-weight:
+		margin-left: $spacer*4
+		font-size: 0.8em
+		letter-spacing: 0.08em
+
+.my-post
+	.media
+		&:hover
+			color: darken($cyan, 15%)
+			opacity: 0.9
+	.my-post-time
+		color: $text
+		letter-spacing: 0.06em
+		font-size: 0.8em
+	&-body
+		padding-top: $spacer*0.5
+		padding-left: $spacer*3
+		&-text
+			line-height: 1.4em
+			font-size: 0.9em
+	&-foot-wrap
+		a
+			padding: $spacer*1.5
+			transition: all 0.2s ease-in-out
+			color: $text
+			&:hover
+				color: $cyan
+	&-btn
+		font-size: 0.8em
+		letter-spacing: 0.15em
+
+.my-footer
+	color: lighten($text, 20%)
+	font-size: 0.8em
+	letter-spacing: 0.1em
+	&-menu
+		list-style: none
+	&-item
+		display: inline-block
+		margin-right: $spacer*0.5
+		a
+			transition: all 0.2s ease-in-out
+		&:hover
+			a
+				color: darken($cyan, 20%)
+				text-decoration: underline
+
+#sidebar-footer
+	color: $white
+	.my-block
+		margin-top: 0
+		background: none
+		box-shadow: none
+	.my-footer-menu
+		margin-left: -10%
+	background: $cyan
+	.my-footer-item
+		a
+			transition: all 0.2s ease-in-out
+		&:hover
+			a
+				background-color: $cyan
+				color: $white
+				text-decoration: underline
+
+
+/* custom navbar */
+/* Pull up  */
+.pullUp li
+	position: relative
+
+.pullUp li.active a:before
+	height: 2px
+	left: 0
+	opacity: 1
+	z-index: 0
+	width: 100%
+
+.pullUp li a:before
+	position: absolute
+	width: 0
+	height: 0px
+	left: 50%
+	bottom: 0px
+	content: ''
+	background: $white
+	opacity: 0.3
+	transition: all 0.3s
+	z-index: -1
+
+.pullUp li:hover a:before
+	height: 2px
+	left: 0
+	opacity: 1
+	z-index: 0
+	width: 100%
+
+
+/* custom UP button */
+#toTop
+	.fa
+		font-size: 1.1em
+	font-size: 1em
+	width: 100px
+	text-align: center
+	padding: 5px
+	position: fixed
+	bottom: 10px /* отступ кнопки от нижнего края страницы*/
+	left: 10px
+	cursor: pointer
+	display: none
+	color: $text
+	transition-property: color, opacity
+	transition: .25s ease-in-out
+	opacity: 0
+
+#toTop.top-active
+	opacity: 0.6
+	display: block
+	&:hover
+		opacity: 1
+		color: $cyan
+
+/* profile */
+.my-profile-bg-wrap
+	display: block
+	.container-fluid
+		padding: 0
+	.my-profile-bg
+		height: 400px
+		width: 100%
+		background-size: cover
+		background-position: center
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: $text
+			opacity: 0.3
+
+/* messages */
+.my-message-wrap
+	position: relative
+	&.my-block
+		padding: 0
+	.my-head
+		padding: 15px
+		border-bottom: 1px solid darken($light, 10%)
+		.my-mes-check
+			opacity: 0.7
+			color: $cyan
+			font-size: 1.2em
+			&:hover
+				opacity: 1
+				cursor: pointer
+		.my-message-head-text
+			padding: 0
+			margin: 0
+			letter-spacing: 0.02em
+
+	.my-body
+		padding: 0
+		margin-top: $spacer*0.5
+		a.my-profile-text
+			display: block
+			border-bottom: 1px solid darken($light, 10%)
+
+			.my-message-row
+				padding: 15px
+				.my-mes-inhead
+					span.my-mes-inhead-date
+						font-size: 0.8em
+						opacity: 0.8
+				.my-mes-name
+
+				&:hover
+					img
+						opacity: 0.7
+					.my-mes-name
+						color: darken($cyan, 10%)
+					span.my-mes-inhead-date
+						color: $text
+				.my-mes-inbody
+					font-size: 0.85em
+					line-height: 1.5em
+					color: lighten($text, 15%)
+
+/* login page */
+.my-log-search
+	input
+		max-width: 190px
+
+.my-log-footer
+	.container-fluid
+		padding: 0
+
+.my-log-left
+	text-align: center
+	h5
+		padding: 0
+		margin: 0
+	p
+		font-size: 0.9em
+
+	.my-log-left-img
+		height: 400px
+		width: 100%
+		background-size: cover
+		background-position: center
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: $text
+			opacity: 0.1
+		border-radius: 5px
+
+.my-log
+	.my-log-forget
+		font-size: 0.9em
+		&:hover
+			text-decoration: underline
+			color: $cyan
+
+.my-log-firstly
+	h5
+		font-size: 1.1em
+		font-weight: bold
+		letter-spacing: 0.03em
+		margin: 0
+	p
+		font-size: 0.85em
+		letter-spacing: 0.03em
+		color: lighten($text, 20%)
+
+.my-log-footer
+	ul.my-footer-menu li.my-footer-item a
+		font-size: 0.9em
+		color: lighten($text, 20%)
+
+@import "media" // Always at the end
+

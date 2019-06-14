@@ -1,0 +1,61 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+
+// ≥768px
++media-breakpoint-down(sm)
+
+// ≥576px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+@media only screen and (max-width : 576px)
+	.my-user-name
+		font-size: 0.75em
+	#toTop
+		bottom: 5px
+		left: 5px
+		width: 50px
+	.toTop-text
+		display: none
+
+	.my-profile-bg-wrap
+		.my-profile-bg
+			height: 250px
+
+	.my-message-wrap
+		.my-head
+			h5, button
+				font-size: 0.95em
+			button
+				padding: $spacer*0.4
+
+	.my-log-search
+		input
+			max-width: 155px
+		button
+			width: 40px
+			height: 40px
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+@media only screen and (max-width : 992px)
+	.fixed-bottom
+		position: relative
+
+// ≤1200px
++media-breakpoint-up(xl)
