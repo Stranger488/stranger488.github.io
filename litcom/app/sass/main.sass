@@ -47,6 +47,16 @@ a
 		text-decoration: none
 		color: $text
 
+.icon
+	font-family: "icomoon" ! important
+	color: #fff
+	display: inline-block
+	font-style: normal
+	font-variant: normal
+	text-rendering: auto
+	line-height: 1
+
+
 
 /*---custom----*/
 .wrapper
@@ -171,6 +181,7 @@ a
 
 .navbar-nav
 	font-size: 0.9em
+	font-weight: 900
 
 .my-profile-wrap
 	padding: 20px
@@ -348,17 +359,21 @@ a
 	left: 10px
 	cursor: pointer
 	display: none
-	color: $text
-	transition-property: color, opacity
-	transition: .25s ease-in-out
 	opacity: 0
+	&, .icon
+		transition-property: color, opacity
+		transition: .25s ease-in-out
+		color: $text
 
 #toTop.top-active
 	opacity: 0.6
 	display: block
 	&:hover
 		opacity: 1
-		color: $cyan
+		&, .icon
+			color: $cyan
+
+
 
 /* profile */
 .my-profile-bg-wrap
@@ -369,7 +384,7 @@ a
 		height: 400px
 		width: 100%
 		background-size: cover
-		background-position: center
+		background-position: center top
 		position: relative
 		&:before
 			content: ''
@@ -433,10 +448,6 @@ a
 	input
 		max-width: 190px
 
-.my-log-footer
-	.container-fluid
-		padding: 0
-
 .my-log-left
 	text-align: center
 	h5
@@ -481,9 +492,11 @@ a
 		color: lighten($text, 20%)
 
 .my-log-footer
-	ul.my-footer-menu li.my-footer-item a
-		font-size: 0.9em
-		color: lighten($text, 20%)
+	color: lighten($text, 20%)
+	font-size: 0.8em
+	letter-spacing: 0.1em
+	.my-footer-item
+		margin-right: 0
+
 
 @import "media" // Always at the end
-

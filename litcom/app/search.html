@@ -19,8 +19,7 @@
     <!-- Custom Browsers Color Start -->
     <meta name="theme-color" content="#000">
     <!-- Custom Browsers Color End -->
-  
-    <link rel="stylesheet" href="libs/font-awesome/css/all.min.css">
+
     <link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -32,25 +31,28 @@
         <!-- Sidebar -->
         <nav id="sidebar">
             <div id="dismiss">
-                <i class="fas fa-arrow-left"></i>
+                <span class="icon-arrow-left">&#xe908;</span>
             </div>
 
             <div class="sidebar-header text-center">
-                <a href="#" class="sidebar-header-link text-link"><h3 class="mb-0">litcom</h3></a>
+                <a href="#" class="sidebar-header-link text-link">
+                  <h3 class="mb-0">litcom</h3>
+                  <span class="icon-arrows-alt">&#xe900;</span>
+                </a>
             </div>
 
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="#"><i class="fa fa-home mr-2"></i>Главная</a>
+                    <a href="#"><span class="icon icon-home mr-2">&#xe909;</span>Главная</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-bell mr-2"></i>Уведомления</a>
+                    <a href="#"><span class="icon icon-bell mr-2">&#xe907;</span>Уведомления</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-envelope mr-2"></i>Сообщения</a>
+                    <a href="#"><span class="icon icon-envelope mr-2">&#xe906</span>Сообщения</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-search mr-2"></i>Поиск</a>
+                    <a href="#"><span class="icon icon-search mr-2">&#xe905</span>Поиск</a>
                 </li>
             </ul>
 
@@ -74,29 +76,30 @@
                 <div class="col">
                   <nav class="navbar navbar-expand-lg navbar-dark">
                     <a class="my-transition my-brand navbar-brand order-1 order-lg-0 d-none d-lg-block" href="#">
-                      <img src="img/favicon/favicon.ico" width="30" height="30" alt="litcom">
+                      <!-- <img src="img/favicon/favicon.ico" width="30" height="30" alt="litcom"> -->
+                      <span class="icon-arrows-alt">&#xe900;</span>
                     </a>
 
                     <button type="button" id="sidebarCollapse" class="d-lg-none btn my-btn order-0 ">
-                        <i class="fa fa-bars"></i>
+                        <span class="icon icon-bars">&#xe90a;</span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                       <ul class="pullUp navbar-nav">
                         <li class="nav-item active">
-                          <a class="nav-link my-transition" href="#"><i class="fa fa-home mr-1"></i>Главная</a>
+                          <a class="nav-link my-transition" href="#"><span class="icon icon-home mr-1">&#xe909;</span>Главная</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link my-transition" href="#"><i class="fa fa-bell mr-1"></i>Уведомления</a>
+                          <a class="nav-link my-transition" href="#"><span class="icon icon-bell mr-1">&#xe907;</span>Уведомления</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link my-transition" href="#"><i class="fa fa-envelope mr-1"></i>Сообщения</a>
+                          <a class="nav-link my-transition" href="#"><span class="icon icon-envelope mr-1">&#xe906;</span>Сообщения</a>
                         </li>
                       </ul>
                     </div>
 
                     <form class="form-inline mr-2 my-log-search">
                       <input class="form-control mr-2" type="search" placeholder="Поиск" aria-label="Search">
-                      <button class="btn my-btn my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+                      <button class="btn my-btn my-2 my-sm-0" type="submit"><span class="icon icon-search">&#xe905;</span></button>
                     </form>
 
                     <a class="my-user-name text-link my-transition" id="user-profile" href="#">
@@ -165,10 +168,10 @@
             </div>
           </div>
 
-          <footer class="my-footer">
+          <footer class="my-footer d-none d-lg-block">
             <div class="my-block">
               <div class="my-footer-info text-center">&copy; litcom, 2019</div>
-              <ul class="my-footer-menu mt-1">
+              <ul class="my-footer-menu mt-1 text-center p-0 d-flex justify-content-around align-items-center">
                 <li class="my-footer-item"><a href="#">О нас</a></li>
                 <li class="my-footer-item"><a href="#">Правила</a></li>
                 <li class="my-footer-item"><a href="#">Условия</a></li>
