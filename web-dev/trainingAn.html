@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="white">
 	<title>Авиатренажеры</title>
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-	<link href="css/main.css" type="text/css" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="js/jquery-ui.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+    <script src="vendor/jquery/jquery-2.3.1.min.js"></script>
 </head>
 <body>
 	<div class="header-panel" id="training">
@@ -35,24 +36,24 @@
 	 
 				<ul id="menu">
 				 	<li>
-						<a href="main.html" class="my-fix-header-text header-text menu-link my-fix-whiteBg whiteBg"><p class="my-fix-header-text header-text hoverable">ГЛАВНАЯ</p></a>
+						<a href="main.html" class="my-fix-header-text header-text menu-link my-fix-whiteBg whiteBg"><p class="my-fix-header-text header-text hoverable">Главная</p></a>
 					</li>
 					<li>
 						<div class="dropdown dropbtn my-fix-header-text header-text menu-link my-fix-whiteBg whiteBg">
-							<p class="my-fix-header-text header-text">ТРЕНАЖЕРЫ</p>
+							<p class="my-fix-header-text header-text">Тренажеры</p>
 						  	<div class="dropdown-content">
 						    	<a href="#main"><p class="my-fix-header-text header-text hoverable">Ан-148</p></a>
-						    	<a href="#main"><p class="my-fix-header-text header-text hoverable">КТС</p></a>
-						    	<a href="#pts"><p class="my-fix-header-text header-text hoverable">ПТС</p></a>
-						    	<a href="#bortpr"><p class="my-fix-header-text header-text hoverable">Бортпроводников</p></a>
-						    	<a href="#study"><p class="my-fix-header-text header-text hoverable">Учебный класс</p></a>
+						    	<a href="#main" class="text-align-right"><p class="my-fix-header-text header-text hoverable"><i class="fa fa-caret-down"></i>КТС</p></a>
+						    	<a href="#pts" class="text-align-right"><p class="my-fix-header-text header-text hoverable"><i class="fa fa-caret-down"></i>ПТС</p></a>
+						    	<a href="#bortpr" class="text-align-right"><p class="my-fix-header-text header-text hoverable"><i class="fa fa-caret-down"></i>Бортпроводников</p></a>
+						    	<a href="#study" class="text-align-right"><p class="my-fix-header-text header-text hoverable"><i class="fa fa-caret-down"></i>Учебный класс</p></a>
 						    	<a href="trainingIl.html"><p class="my-fix-header-text header-text hoverable">Ил-96</p></a>
 							 </div>
 						</div>
 					</li>
-					<li><a href="#obuch" class="menu-link my-fix-whiteBg whiteBg"><p class="my-fix-header-text header-text hoverable">ОБУЧЕНИЕ</p></a></li>
-					<li><a href="#plane" class="menu-link my-fix-whiteBg whiteBg"><p class="my-fix-header-text header-text hoverable">О САМОЛЕТЕ</p></a></li>
-					<li><a href="#contact" class="menu-link my-fix-whiteBg whiteBg"><p class="my-fix-header-text header-text hoverable">КАК ДОБРАТЬСЯ</p></a></li>
+					<li><a href="#obuch" class="menu-link my-fix-whiteBg whiteBg"><p class="my-fix-header-text header-text hoverable">Обучение</p></a></li>
+					<li><a href="#plane" class="menu-link my-fix-whiteBg whiteBg"><p class="my-fix-header-text header-text hoverable">О самолете</p></a></li>
+					<li><a href="#contact" class="menu-link my-fix-whiteBg whiteBg"><p class="my-fix-header-text header-text hoverable">Как добраться</p></a></li>
 				</ul>
 			</nav>
 		</div>		
@@ -75,23 +76,21 @@
 				<div class="training-info-element-wrap">
 					<i class="fa fa-cogs"></i>
 					<h4>Разработка ЗАО «Транзас»</h4>
-					<p class="p400" >Комплексный тренажер Ан-148 («КТС Ан-148») разработан и построен российской компанией ЗАО «Транзас» (Санкт-Петербург) по заказу лизинговой компании ОАО «Ильюшин Финанс Ко.»</p>	
+					<p class="p400" >Комплексный тренажер Ан-148 («КТС Ан-148») разработан и построен российской компанией ЗАО «Транзас» (Санкт-Петербург) по заказу лизинговой компании ОАО «Ильюшин Финанс Ко.»</p>
 				</div>
-				
-				<!-- <div class=" sep-hor-light"></div> -->
+
 				<div class="training-info-element-wrap">
 						<i class="fa fa-thumbs-up"></i>
 						<h4>Соответствие уровню D</h4>
-						<p class="p400">Это первый в России тренажер отечественного производства, соответствующий уровню «D» - наивысшему уроню классификации авиационных тренажеров по международным стандартам, позволяющий осуществлять подготовку летного персонала без тренировок на реальном самолете. </p>	
+						<p class="p400">Это первый в России тренажер отечественного производства, соответствующий уровню «D» - наивысшему уроню классификации авиационных тренажеров по международным стандартам, позволяющий осуществлять подготовку летного персонала без тренировок на реальном самолете. </p>
 				</div>
-				
-				<!-- <div class=" sep-hor-light"></div> -->
+
 				<div class="training-info-element-wrap">
-						<i class="fa fa-plane"></i>
-						<h4>Имитация полета самолета</h4>
-						<p class="p400">Комплексный (Full Flight Simulator - FFS) тренажер - это пилотажный тренажер, который имеет систему подвижности, имитирующую полет самолета, оборудован кабиной полностью соответствующей кабине пилотов реального воздушного судна, имеет совершенную систему визуализации и предназначен для отработки комплексных навыков выполнения полетов.</p>
+					<i class="fa fa-plane"></i>
+					<h4>Имитация полета самолета</h4>
+					<p class="p400">Комплексный (Full Flight Simulator - FFS) тренажер - это пилотажный тренажер, который имеет систему подвижности, имитирующую полет самолета, оборудован кабиной полностью соответствующей кабине пилотов реального воздушного судна, имеет совершенную систему визуализации и предназначен для отработки комплексных навыков выполнения полетов.</p>
 				</div>
-				
+
 			</div>
 		
 			<!-- <div class="basic-block bb-black training-info">
@@ -114,11 +113,28 @@
 			</div>
 
 			<div class="basic-block bb-white training-info">
-				<p class="p400">Процедурный тренажер Ан-148 («ПТС Ан-148») разработан и построен российской компанией ЗАО «Транзас» (Санкт-Петербург) по заказу лизинговой компании ОАО «Ильюшин Финанс Ко.». </p>	
-				<div class=" sep-hor-light"></div>
-				<p class="p400">Процедурные тренажеры (Flight Procedures Training Device) предназначены для отработки экипажем процедур подготовки и выполнения полета. В тренажерах такого назначения пульты, приборы и органы управления обычно имитируется с помощью сенсорных мониторов.  </p>
-				<div class=" sep-hor-light"></div>
-				<p class="p400">Виды тренировок на ПТС: Для удобства отдельные пульты и органы управления могут быть представлены в виде полноразмерных макетов. В нашем варианте процедурного тренажера установлен имитатор козырька приборной доски пилотов, состоящий из пульта управления автопилотом и пультов сигнализации и приоритета. Также на тренажере установлены имитаторы лицевых панелей вычислительной системы самолетовождения.</p>
+
+				<div class="training-info-element-wrap">
+					<i class="fa fa-cogs"></i>
+					<h4>Разработка ЗАО «Транзас»</h4>
+					<p class="p400">Процедурный тренажер Ан-148 («ПТС Ан-148») разработан и построен российской компанией ЗАО «Транзас» (Санкт-Петербург) по заказу лизинговой компании ОАО «Ильюшин Финанс Ко.». </p>
+				</div>
+
+				<div class="training-info-element-wrap">
+					<i class="fa fa-desktop"></i>
+					<h4>Сенсорные мониторы</h4>
+					<p class="p400">Процедурные тренажеры (Flight Procedures Training Device) предназначены для отработки экипажем процедур подготовки и выполнения полета. В тренажерах такого назначения пульты, приборы и органы управления обычно имитируется с помощью сенсорных мониторов.  </p>
+				</div>
+
+				<div class="training-info-element-wrap">
+					<i class="fa fa-keyboard"></i>
+					<h4>Разработка ЗАО «Транзас»</h4>
+					<p class="p400">Виды тренировок на ПТС: Для удобства отдельные пульты и органы управления могут быть представлены в виде полноразмерных макетов. В нашем варианте процедурного тренажера установлен имитатор козырька приборной доски пилотов, состоящий из пульта управления автопилотом и пультов сигнализации и приоритета. Также на тренажере установлены имитаторы лицевых панелей вычислительной системы самолетовождения.</p>
+				</div>
+
+
+
+
 			</div>
 
 
@@ -146,11 +162,25 @@
 			</div>
 
 			<div class="basic-block bb-white training-info">
-				<p class="p400"> Ежегодная аварийно-спасательная подготовка проводится на базе макета воздушного судна Ан-148. Отрабатываются навыки оперирования дверью (door training); slide training, CEET (cabin emergency evacuation training) - проведение аварийно спасательной эвакуации с использованием аварийно-спасательного оборудования. </p>	
-				<div class=" sep-hor-light"></div>
-				<p class="p400">Практическое обучение проводится в специализированных классах, занятия по медицине проводятся на профильных тренажерах. Преподаватели в области подготовки кабинных экипажей - сертифицированные специалисты-практики. </p>
-				<div class=" sep-hor-light"></div>
-				<p class="p400"> Осуществляется постоянный мониторинг: опросы в процессе обучения, тестирование, экзамены, проверка практических навыков работы в рейсовых условиях – на основании обратной связи со Службой бортпроводников. Качество обучения подтверждается качеством работы наших бортпроводников. Вопросы и проблемы, возникающие в рейсах – обязательная тема обсуждения на курсах повышения квалификации (КПК) и совместных со Службой бортпроводников заседаниях учебно-методического совета.</p>
+				<div class="training-info-element-wrap">
+					<i class="fa fa-industry"></i>
+					<h4>Аварийно-спасательная подготовка</h4>
+					<p class="p400">Ежегодная аварийно-спасательная подготовка проводится на базе макета воздушного судна Ан-148. Отрабатываются навыки оперирования дверью (door training); slide training, CEET (cabin emergency evacuation training) - проведение аварийно спасательной эвакуации с использованием аварийно-спасательного оборудования. </p>
+				</div>
+
+				<div class="training-info-element-wrap">
+					<i class="fa fa-university"></i>
+					<h4>Практическое обучение</h4>
+					<p class="p400">Практическое обучение проводится в специализированных классах, занятия по медицине проводятся на профильных тренажерах. Преподаватели в области подготовки кабинных экипажей - сертифицированные специалисты-практики. </p>
+				</div>
+
+				<div class="training-info-element-wrap">
+					<i class="fa fa-thumbs-up"></i>
+					<h4>Качество обучения</h4>
+					<p class="p400">Осуществляется постоянный мониторинг: опросы в процессе обучения, тестирование, экзамены, проверка практических навыков работы в рейсовых условиях – на основании обратной связи со Службой бортпроводников. Качество обучения подтверждается качеством работы наших бортпроводников. Вопросы и проблемы, возникающие в рейсах – обязательная тема обсуждения на курсах повышения квалификации (КПК) и совместных со Службой бортпроводников заседаниях учебно-методического совета.</p>
+				</div>
+
+				<!-- <div class=" sep-hor-light"></div> -->
 			</div>
 
 
@@ -177,9 +207,24 @@
 			</div>
 
 			<div class="basic-block bb-white training-info">
-				<p class="p400">  Учебные классы оборудованы современными техническими средствами обучения. В лекционных классах расположены современные компьютеры с доступом к Учебно-компьютерному классу Ан-148 (CBT), а также проекторы, обеспечивающие наглядность учебного процесса.  </p>	
-				<div class=" sep-hor-light"></div>
-				<p class="p400">Для проведения экзаменов и компьютерного тестирования оборудованы специализированные классы. </p>
+
+				<div class="training-info-element-wrap">
+					<i class="fa fa-mouse-pointer"></i>
+					<h4>Совеременное обучение</h4>
+					<p class="p400">Учебные классы оборудованы современными техническими средствами обучения. В лекционных классах расположены современные компьютеры с доступом к Учебно-компьютерному классу Ан-148 (CBT), а также проекторы, обеспечивающие наглядность учебного процесса.  </p>
+				</div>
+
+
+
+				<!-- <div class="sep-hor-wrap"><div class=" sep-hor-light"></div></div> -->
+
+				<div class="training-info-element-wrap">
+						<i class="fa fa-door-open"></i>
+						<h4>Специализированные классы</h4>
+						<p class="p400">Для проведения экзаменов и компьютерного тестирования оборудованы специализированные классы.</p>
+				</div>
+
+
 			</div>
 
 
@@ -1103,7 +1148,7 @@
 			<p class="footer-text">ifctra@gmail.com</p>
 		</div>
 	</footer>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
 		<script type="text/javascript">
 		$('.slider').slick({
 			dots: true,
