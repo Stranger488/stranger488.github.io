@@ -285,7 +285,7 @@ body ul li {
   font-weight: 300;
 }
 .about-list > li::before {
-  content: '●';
+  content: "●";
   color: #5472e3;
   display: inline-block;
   width: 1em;
@@ -335,9 +335,10 @@ body ul li {
 }
 .slide-content {
   position: absolute;
-  bottom: 55px;
+  bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 50px;
   z-index: 3;
   text-align: center;
 }
@@ -526,7 +527,7 @@ ul.hamburger {
 ul.hamburger li {
   height: 5px;
   background: #000;
-  content: '';
+  content: "";
   position: relative;
   transition: 0.5s ease-out;
 }
@@ -1085,14 +1086,6 @@ ul.hamburger li:nth-child(3) {
 .slick-dots li.slick-active button {
   background-color: rgba(255, 255, 255, 0.75) !important;
 }
-.my-slider .slick-dots {
-  bottom: 5px;
-}
-@media screen and (max-width: 700px) {
-  .my-slider .slick-dots {
-    bottom: -10px;
-  }
-}
 .slider-arrow {
   position: absolute;
   top: 50%;
@@ -1117,13 +1110,6 @@ ul.hamburger li:nth-child(3) {
 }
 .slider-arrow > div:hover > i {
   opacity: 1;
-}
-@media screen and (max-width: 600px) {
-  .slider-arrow > div {
-    font-size: 32px;
-    height: 60px;
-    width: 35px;
-  }
 }
 .arrow-prev {
   left: 5%;
@@ -1162,18 +1148,10 @@ ul.hamburger li:nth-child(3) {
   position: absolute;
   z-index: 5;
   color: white;
-  bottom: 60px;
+  bottom: 140px;
   left: 50%;
   transform: translate(-50%, 0);
   text-shadow: 0 0 15px black;
-}
-.training-slider-header.my-training-slider-header {
-  bottom: 5px;
-}
-@media screen and (max-width: 700px) {
-  .training-slider-header.my-training-slider-header {
-    bottom: 55px;
-  }
 }
 .slider-parent {
   position: relative;
@@ -1224,24 +1202,20 @@ ul.hamburger li:nth-child(3) {
     font-size: 22px;
   }
 }
-@media screen and (max-width: 850px) {
-  .slider .slide-content {
-    bottom: 45px;
-  }
-}
 @media screen and (max-width: 700px) {
   .slider .slide-content {
-    bottom: 0px;
+    padding: 30px;
   }
 }
-@media screen and (max-width: 588px) {
+@media screen and (max-width: 420px) {
   .slider .slide-content {
-    bottom: -20px;
+    padding: 10px;
   }
 }
 @media screen and (max-width: 700px) {
   .slider-parent .training-slider-header {
     font-size: 28px;
+    bottom: 80px;
   }
 }
 @media screen and (max-width: 420px) {
@@ -1261,7 +1235,7 @@ ul.hamburger li:nth-child(3) {
 }
 @media screen and (max-width: 700px) {
   .slick-dots {
-    bottom: -10px;
+    bottom: 15px;
   }
 }
 .training-info-element-wrap {
